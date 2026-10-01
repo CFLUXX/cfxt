@@ -1,0 +1,56 @@
+================================================================================
+                         cfxt
+================================================================================
+
+██████╗███████╗██╗  ██╗████████╗
+██╔════╝██╔════╝╚██╗██╔╝╚══██╔══╝
+██║     █████╗   ╚███╔╝    ██║
+██║     ██╔══╝   ██╔██╗    ██║
+╚██████╗██║     ██╔╝ ██╗   ██║
+ ╚═════╝╚═╝     ╚═╝  ╚═╝   ╚═╝
+
+Copyright © 2026 CFLUXX
+Copyright © 2026 the cfxt contributors
+License: MIT
+
+cfxt bundles the following third-party libraries:
+
+--------------------------------------------------------------------------------
+CLI11
+--------------------------------------------------------------------------------
+CLI11 2.7.2 Copyright (c) 2017-2026 University of Cincinnati, developed by Henry
+Schreiner under NSF AWARD 1414736. All rights reserved.
+License: BSD-3-Clause
+Source: https://github.com/CLIUtils/CLI11
+
+--------------------------------------------------------------------------------
+fmt
+--------------------------------------------------------------------------------
+Copyright (c) 2012-present, Victor Zverovich and {fmt} contributors
+License: MIT
+Source: https://github.com/fmtlib/fmt
+
+--------------------------------------------------------------------------------
+nlohmann_json
+--------------------------------------------------------------------------------
+Copyright (c) 2013-2026 Niels Lohmann
+License: MIT
+Source: https://github.com/nlohmann/json
+
+--------------------------------------------------------------------------------
+toml++
+--------------------------------------------------------------------------------
+Copyright (c) Mark Gillard <mark.gillard@outlook.com.au>
+License: MIT
+Source: https://github.com/marzer/tomlplusplus
+
+--------------------------------------------------------------------------------
+inja
+--------------------------------------------------------------------------------
+Copyright (c) 2018-2025 Lars Berscheid
+License: MIT
+Source: https://github.com/pantor/inja
+
+================================================================================
+Full license texts are available in the third_party/<library> directory.
+================================================================================

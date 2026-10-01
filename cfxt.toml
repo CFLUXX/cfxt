@@ -1,0 +1,78 @@
+[project]
+name = "cfxt"
+version = "0.1.0"
+license = "MIT"
+authors = ["CFLUXX", "the cfxt contributors"]
+description = ""
+
+
+[project.info]
+type = "exe"
+# exe, lib,.drogon, ...
+
+[project.git]
+url = "https://github.com/CFLUXX/cfxt.git"
+ssh_url = ""
+
+[project.options]
+standard = 23 # C++标准版本
+module = true # 是否使用C++20之后的模块
+
+[project.tools]
+scan_deps = true # 是否启用 clang-scan-deps
+
+[[project.target]]
+name = "cfxtcore"
+lib = true
+exe = false
+static = true
+shared = false
+
+sources = [
+  "src/config/impl/*.cc",
+  "src/template/impl/*.cc",
+  "src/core/impl/*.cc",
+  "src/utils/*.cc",
+] # 默认使用file(GLOB)扫描文件
+modules = ["src/config/*.cppm", "src/core/*.cppm", "src/template/*.cppm"]
+deps = [
+  "nlohmann_json::nlohmann_json",
+  "fmt::fmt",
+  "CLI11::CLI11",
+  "pantor::inja",
+  "tomlplusplus::tomlplusplus",
+]
+
+[[project.deps]]
+name = "nlohmann_json"
+target = "nlohmann_json::nlohmann_json"
+version = "v3.12.0"
+git = "https://github.com/nlohmann/json.git"
+
+
+[[project.deps]]
+name = "CLI11"
+target = "CLI11::CLI11"
+version = "v3.4.0"
+git = "https://github.com/CLIUtils/CLI11.git"
+
+
+[[project.deps]]
+name = "fmt"
+target = "fmt::fmt"
+version = "v11.2.0"
+git = "https://github.com/fmtlib/fmt.git"
+
+
+[[project.deps]]
+name = "inja"
+target = "pantor::inja"
+version = "v3.5.0"
+git = "https://github.com/pantor/inja.git"
+
+
+[[project.deps]]
+name = "tomlplusplus"
+target = "tomlplusplus::tomlplusplus"
+version = "v3.4.0"
+git = "https://github.com/marzer/tomlplusplus.git"
